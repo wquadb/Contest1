@@ -1,0 +1,10 @@
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/task1.dir
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/task2.dir
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/task3.dir
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/task4.dir
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/task5.dir
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/task6.dir
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/task7.dir
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/task8.dir
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/edit_cache.dir
+/Users/sergey/CppProjects/Contest1/build/CMakeFiles/rebuild_cache.dir
