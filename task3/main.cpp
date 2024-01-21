@@ -6,10 +6,12 @@ int main() {
     std::cin >> v >> t;
     if (t <= 0 || v == 0) {
         std::cout << 0;
-    } else if (v < 0) {
-        std::cout << 109 - std::floor(std::abs(v * t) % 109);
     } else {
-        std::cout << std::floor(std::abs(v * t) % 109);
+        int result = std::floor((v * t) % 109);
+        if (result < 0) {
+            result += 109;
+        }
+        std::cout << result;
     }
     return 0;
 }
