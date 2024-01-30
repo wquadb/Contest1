@@ -1,38 +1,20 @@
 #include <iostream>
-#include <string>
-#include <fstream>
+#include <cstdint>
 
-bool queenmove(float x1, float x2, float y1, float y2) {
-    float movex = std::abs(x1 - x2);
-    float movey = std::abs(y1 - y2);
-    if (movex == movey || movex == 0 || movey == 0) {
-        return true;
-    } else {
-        return false;
-    };
+bool isItAQueenMove(uint8_t x1, uint8_t x2, uint8_t y1, uint8_t y2) {
+    return std::abs(x1 - x2) == std::abs(y1 - y2) || x == x || y == y;
 }
 
 int main() {
-
-    float x1, y1, x2, y2;
-
-    std::ifstream in("input.txt");
     
-    in >> x1 >> y1 >> x2 >> y2;
-
-    in.close();
+    uint8_t x1, y1, x2, y2;
+    std::cin >> x1 >> y1 >> x2 >> y2;    
     
-    std::ofstream out("output.txt");
-    
-    bool result = queenmove(x1, x2, y1, y2);
-    
-    if (result) {
-        out << "YES";
-    } else {
-        out << "NO";
+    if (isItAQueenMove(x1, x2, y1, y2)) {
+        std::cout << "YES";
+        return 0;
     };
-
-    out.close();
-
+    std::cout << "NO";
     return 0;
+    
 }
